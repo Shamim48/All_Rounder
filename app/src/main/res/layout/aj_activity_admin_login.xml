@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aj_AdminLogin"
+    android:orientation="vertical"
+    android:background="@drawable/aj_grad_bg"
+    android:paddingTop="56dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/spin_kit_admin"
+            style="@style/SpinKitView.Large.Circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="156dp"
+            android:visibility="invisible"
+            app:SpinKit_Color="@color/colorAccent" />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/share_admin_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:gravity="center"
+                android:text="All Rounder"
+                android:textSize="40dp"
+                android:textColor="@color/colorAccent"
+
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/colorAccent"
+                android:padding="10dp"
+                android:hint="Admin  Email"
+                android:textColorHint="@color/colorAccent"
+                android:inputType="textEmailAddress"
+                android:id="@+id/admin_email_id"
+                android:background="@drawable/aj_et_bg"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/colorAccent"
+                android:padding="10dp"
+                android:hint="Password"
+                android:textColorHint="@color/colorAccent"
+                android:inputType="textPassword"
+                android:id="@+id/admin_password_id"
+                android:background="@drawable/aj_et_bg"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/colorAccent"
+                android:background="@drawable/aj_btn_bg"
+                android:padding="10dp"
+                android:text="LOGin"
+                android:textAllCaps="true"
+                android:id="@+id/admin_login_btn"
+
+                />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

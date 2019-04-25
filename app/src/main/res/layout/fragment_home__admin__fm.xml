@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    tools:context=".Admin.Home_Admin_FMT">
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/spin_kit_admin_set_admin_homef"
+            style="@style/SpinKitView.Large.Circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="219dp"
+            android:visibility="invisible"
+            app:SpinKit_Color="@color/colorPrimary" />
+
+
+        <LinearLayout
+            android:paddingBottom="20dp"
+            android:paddingTop="15dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/EmployeeTvId"
+                android:textColor="@color/black"
+                android:text="Home"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#f4eded"
+                >
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/admin_image_select"
+                    android:src="@drawable/aj_admin_image_company"
+                    android:background="@drawable/aj_edit_text_border"
+                    android:padding="10dp"
+                    />
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="select an Image"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:paddingTop="0dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/select_image"
+                />
+
+
+            <EditText android:id="@+id/title_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:hint="Set Title"
+                android:lines="2"
+                android:maxLines="4"
+                android:gravity="top|left"
+                android:textSize="20sp"
+                android:background="@drawable/aj_edit_text_border"
+                android:lineSpacingExtra="4dp"
+                android:padding="10dp"
+                />
+
+            <EditText android:id="@+id/body_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:hint="Set Description"
+                android:lines="5"
+                android:maxLines="50"
+                android:gravity="top|left"
+                android:textSize="20sp"
+                android:background="@drawable/aj_edit_text_border"
+                android:lineSpacingExtra="3dp"
+                android:padding="10dp"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/admin_home_page_database"
+                android:background="@drawable/buttonbg"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Upload"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>
+    </LinearLayout>

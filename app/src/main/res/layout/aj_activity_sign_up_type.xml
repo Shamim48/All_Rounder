@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aj_SignUpType"
+    android:orientation="vertical"
+    android:background="@drawable/aj_grad_bg"
+    android:paddingTop="56dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    >
+
+
+    <TextView
+        android:id="@+id/sign_type_share_title"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="Share Info"
+        android:textSize="40dp"
+        android:textColor="@color/colorAccent"
+
+        />
+
+
+    <Button android:id="@+id/user_SignUP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create User Account"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/aj_group_users"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/aj_btn_bg"
+        android:padding="10dp"
+
+        />
+
+
+    <Button android:id="@+id/admin_signUP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Admin Account"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/aj_admin"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/aj_btn_bg"
+        android:padding="10dp"
+        />
+
+
+
+</LinearLayout>

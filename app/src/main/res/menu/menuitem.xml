@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:title="Share"
+        android:id="@+id/SerchMenuId"
+       app:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_search"
+
+        >
+    </item>
+    <item android:title="Settings"
+        android:id="@+id/SettingMenuid"
+        app:showAsAction="never"
+
+        >
+    </item>
+
+    <item
+        android:title="Go to Online"
+        app:showAsAction="never"
+        android:id="@+id/ge_to_online"
+        />
+    <item android:title="log OutId"
+        android:id="@+id/logOutId"
+        app:showAsAction="never"
+
+        >
+    </item>
+    <item android:title="About"
+        android:id="@+id/AboutMenuid"
+        app:showAsAction="never"
+
+        />
+
+
+</menu>

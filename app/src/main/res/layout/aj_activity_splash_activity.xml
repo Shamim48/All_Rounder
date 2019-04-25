@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#262626"
+    tools:context=".aj_Splash_activity"
+    android:paddingBottom="20dp"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="Welcome to All Rounder"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_marginBottom="220dp"
+        android:id="@+id/welcome_txt"
+        />
+
+
+
+    <com.cunoraz.gifview.library.GifView
+        android:id="@+id/gif2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:gif="@mipmap/gif2"
+        android:layout_marginBottom="50dp"
+        />
+
+    <ProgressBar
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_margin="20dp"
+        android:progressBackgroundTint="@color/white"
+        android:id="@+id/progress_count"
+        />
+
+
+</LinearLayout>

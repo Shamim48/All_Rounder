@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aj_Set_Admin_Message"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/spin_kit_admin_message"
+            style="@style/SpinKitView.Large.Circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="290dp"
+            android:visibility="invisible"
+            app:SpinKit_Color="@color/colorPrimary" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:text="Send Notification"
+                android:textSize="40dp"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#f4eded"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/notification_image"
+                    android:src="@drawable/aj_admin_image_company"
+                    android:background="@drawable/aj_edit_text_border"
+                    android:padding="10dp"
+                    />
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="select an Image"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:paddingTop="0dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/select_image"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:maxLines="4"
+                android:gravity="top|left"
+                android:textSize="20sp"
+                android:lineSpacingExtra="4dp"
+                android:hint="Set Title"
+                android:paddingLeft="10dp"
+                android:id="@+id/notification_title"
+                android:background="@drawable/aj_edit_text_border"
+                />
+
+            <EditText
+                android:id="@+id/notification_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="8dp"
+                android:hint="Set Message"
+                android:paddingLeft="10dp"
+                android:lines="7"
+                android:maxLines="50"
+                android:gravity="top|left"
+                android:textSize="20sp"
+                android:background="@drawable/aj_edit_text_border"
+                android:lineSpacingExtra="3dp"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/notification_send_button"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="Send"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+
+                />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".aj_ShowHomePage">
+
+
+    <LinearLayout
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:background="#FFFF"
+        >
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:src="@drawable/aj_home"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginRight="2dp"
+            android:id="@+id/user_show_homepage"
+            />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/aj_employees"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginRight="2dp"
+            android:id="@+id/user_show_employee"
+            />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/aj_tools"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginRight="2dp"
+            android:id="@+id/user_show_services"
+            />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:src="@drawable/aj_addnotification"
+            android:id="@+id/user_show_notification"
+            android:layout_marginRight="2dp"
+            />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:src="@drawable/aj_image2"
+            android:id="@+id/user_show_photogalarry"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.github.ybq.android.spinkit.SpinKitView  xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/spin_kit_show_home_page_touserPP"
+                style="@style/SpinKitView.Large.Circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="247dp"
+                android:layout_marginEnd="127dp"
+                android:visibility="invisible"
+                app:SpinKit_Color="@color/colorPrimary" />
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/user_show_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp" />
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:id="@+id/user_show_title"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#000"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:lineSpacingExtra="3dp"
+                    android:textSize="20sp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/black"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="5dp"
+                    android:id="@+id/user_show_body"
+                    />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

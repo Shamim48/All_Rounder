@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Share"
+        android:id="@+id/SerchMenuId"
+        app:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_search"
+
+        >
+    </item>
+    <item android:title="Settings"
+        android:id="@+id/SettingMenuid"
+        app:showAsAction="never"
+
+        >
+    </item>
+
+    <item
+        android:title="Go to Fragment home"
+        app:showAsAction="never"
+        android:id="@+id/go_to_home"
+        />
+    <item android:title="Goto Admin fragment"
+        android:id="@+id/adminFragment"
+        app:showAsAction="never"
+
+        >
+    </item>
+
+    <item android:title="Log Out"
+        android:id="@+id/logout"
+        app:showAsAction="never"
+
+        />
+
+</menu>

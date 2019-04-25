@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whitegray"
+    android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/user_show_image_row"
+                android:layout_width="match_parent"
+                android:scaleType="matrix"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:id="@+id/user_show_title_row"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/whitegray"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:lineSpacingExtra="3dp"
+                android:textSize="20sp"
+                android:paddingTop="5dp"
+                android:textColor="@color/black"
+                android:paddingEnd="10dp"
+                android:paddingBottom="5dp"
+                android:id="@+id/user_show_body_row"
+                />
+
+
+        </LinearLayout>
+
+</LinearLayout>

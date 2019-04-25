@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@color/whitegray"
+    android:paddingBottom="20dp"
+    android:descendantFocusability="afterDescendants"
+    android:focusable="false"
+    >
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_marginBottom="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+
+                android:id="@+id/jod_adapter_logo"
+                android:padding="5dp"
+                android:layout_width="100dp"
+                android:layout_height="80dp" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="22sp"
+                android:textColor="@color/colorPrimary"
+                android:paddingLeft="15dp"
+                android:gravity="center_vertical"
+                android:id="@+id/jod_adapter_company_name"
+                android:layout_marginLeft="2dp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/whitegray"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:id="@+id/jod_adapter_com_title"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/whitegray"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:textSize="18sp"
+                android:text="New Offer"
+                android:id="@+id/jod_adapter_com_body"
+                android:textColor="@color/black"
+                />
+
+            <ImageView
+                android:id="@+id/jod_adapter_big_logo"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="160dp" />
+
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="reply"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:id="@+id/jod_adapter_reply_btn"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:id="@+id/jod_adapter_reply_et"
+                android:background="@drawable/aj_edit_text_border"
+                android:textColor="#000"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

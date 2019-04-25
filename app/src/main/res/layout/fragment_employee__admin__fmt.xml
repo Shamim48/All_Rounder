@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    tools:context=".Admin.Employee_Admin_FMT">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/spin_kit_admin_set_employee"
+            style="@style/SpinKitView.Large.Circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="197dp"
+            android:visibility="invisible"
+            app:SpinKit_Color="@color/colorPrimary" />
+
+
+
+        <LinearLayout
+            android:paddingBottom="20dp"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/EmployeeTvId"
+                android:textColor="@color/black"
+                android:text="Employee"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/employee_img_view"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/aj_image_choose"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorPrimaryDark"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <!-- Name Label -->
+            <EditText android:id="@+id/emp_name"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:inputType="textPersonName"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:hint="Employee Name"
+                android:paddingLeft="10dp"
+                android:background="@drawable/aj_edit_text_border"
+                />
+
+
+            <EditText android:id="@+id/emp_descrip"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:hint="Designation"
+                android:paddingLeft="10dp"
+                android:textSize="20sp"
+                android:lineSpacingExtra="3dp"
+                android:background="@drawable/aj_edit_text_border"
+                />
+
+            <EditText android:id="@+id/emp_phone"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:inputType="number"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:hint="Phone"
+                android:paddingLeft="10dp"
+                android:background="@drawable/aj_edit_text_border"
+                />
+
+            <EditText android:id="@+id/emp_email"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:hint="Email"
+                android:paddingLeft="10dp"
+                android:background="@drawable/aj_edit_text_border"
+                />
+
+
+
+            <Button
+                android:id="@+id/emp_save_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:padding="12dp"
+                android:text="Upload"
+                android:textColor="@color/colorAccent"
+                android:background="@drawable/buttonbg"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
